@@ -1,16 +1,11 @@
-# flutter_final
+# ตัวอย่างโค้ด final ของ flutter
 
-A new Flutter project.
+เข้าไปดูใน lib/main.dart ได้เลย มีคอมเมนท์ให้หมดแล้ว
+หรือจะ zip แล้วเอาไปลงเครื่องก็ตามสบาย
 
-## Getting Started
+## ตัวอย่างแอพที่เสร็จแล้ว
+หน้าหลัก
+![home](https://i.imgur.com/vclmIm4.png)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.io/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.io/docs/cookbook)
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+หลังจากกดรูปเป็ดน้อยน่ารัก
+![second page](https://i.imgur.com/IoYxidh.png)
