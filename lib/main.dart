@@ -19,8 +19,10 @@ class Screen extends StatelessWidget {
       appBar: AppBar(
         title: Text('Duck'),
       ),
-      // สร้าง container แนวนอน (Row) แล้วไปเรียกใช้ ScreenBuilder
+      // SingleChildScrollView เป็น method ที่ทำให้ column สามารถ scroll ได้
+      // ปกติแล้วความสูงของ column จะเท่ากับความสูงหน้าจอ ทำให้เลื่อนขึ้นลงไม่ได้
       body: SingleChildScrollView(
+        // สร้าง container แนวนอน (Row)
         child: Column(
           // children จะเป็น property ที่บอกว่า container ของเรามีอะไรบ้าง
           children: <Widget>[
@@ -66,6 +68,48 @@ class Screen extends StatelessWidget {
               child: RaisedButton(
                 child: Image.network(
                   'https://farm8.staticflickr.com/7194/6878042799_6e09e179eb_b.jpg'
+                ),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => SecondPage())
+                  );
+                },
+              ),
+              padding: EdgeInsets.all(10),
+            ),
+            Container(
+              child: RaisedButton(
+                child: Image.network(
+                  'http://static.flickr.com/3553/3307270376_66cac90cbb.jpg'
+                ),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => SecondPage())
+                  );
+                },
+              ),
+              padding: EdgeInsets.all(10),
+            ),
+            Container(
+              child: RaisedButton(
+                child: Image.network(
+                  'https://farm8.staticflickr.com/7194/6878042799_6e09e179eb_b.jpg'
+                ),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => SecondPage())
+                  );
+                },
+              ),
+              padding: EdgeInsets.all(10),
+            ),
+            Container(
+              child: RaisedButton(
+                child: Image.network(
+                  'http://static.flickr.com/3553/3307270376_66cac90cbb.jpg'
                 ),
                 onPressed: () {
                   Navigator.push(
